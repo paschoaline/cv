@@ -2,126 +2,253 @@
 <html>
   <head>
     <title>Aline</title>
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📇</text></svg>"
+    />
     <style type="text/css">
-      
-    * {
-      font-family: sans-serif;
-    }
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@700&family=Roboto:wght@300;500&display=swap');
 
-    body {
-      max-width: 1200px;
-      margin: 120px auto;
-    }
+      * {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.5;
+      }
 
-    h1:before {
-      content: ' ';
-      display: inline-block;
-      height: 120px;
-      width: 120px;
-      background-image: url(./aline-pro.jpg);
-      background-position: center;
-      background-size: 100%;
-      border-radius: 50%;
-    }
+      body {
+        max-width: 960px;
+        margin: 120px auto;
+        padding: 0 40px;
+        font-weight: 300;
+        background: #eee;
+      }
 
+      h1,
+      h2,
+      h3 {
+        font-family: 'Roboto Serif', serif;
+      }
+      h3 {
+        margin-top: 1.5em;
+        border-bottom: 0.25em solid #ccc;
+        margin-bottom: 0.5em;
+      }
+      h2 {
+        margin-top: 3em;
+        font-variant: small-caps;
+        border-bottom: 0.5em solid #ccc;
+        margin-bottom: 1em;
+      }
+      h1 {
+        display: flex;
+        align-items: center;
+      }
 
+      code {
+        background: #ccc;
+        padding: 0 0.25em;
+        border-radius: 0.25em;
+      }
+
+      mark {
+        background: #fff;
+        padding: 0 0.25em;
+        border-radius: 0.25em;
+      }
+
+      i {
+        color: #333;
+      }
+
+      dfn {
+        color: #555;
+      }
+
+      h1:before {
+        content: ' ';
+        display: inline-block;
+        height: 120px;
+        width: 120px;
+        background-image: url(./aline-pro.jpg);
+        background-position: center;
+        background-size: 100%;
+        border-radius: 50%;
+        -webkit-print-color-adjust: exact !important;
+        color-adjust: exact !important;
+        margin-right: 1em;
+        border: 8px solid white;
+        box-shadow: 0 0 20px -10px;
+      }
+      address {
+        display: inline-block;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 1.25em;
+      }
+
+      #personal-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      #personal-card ul {
+        background: #fff;
+        padding: 1em;
+        border-radius: 1em;
+      }
+      #personal-card li {
+        list-style: none;
+      }
+
+      @media print {
+        body {
+          margin-top: 2em;
+        }
+        #personal-skills {
+          padding-top: 6em;
+        }
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        body {
+          font-size: 0.75em;
+        }
+      }
     </style>
   </head>
   <body>
-    <h1>Aline Paschoalino</h1>
+    <div id="personal-card">
+      <h1>Aline Paschoalino</h1>
 
-    <ul>
-      <li>Born 03.11.1986, Brazilian</li>
+      <ul>
+        <li>👶 Born 03.11.1986, 🇧🇷 Brazilian</li>
 
-      <li><address>Av Duque de Loule, 90, 1050-092, Lisbon</address></li>
-      <li><code>+351 963 695</code></li>
-      <li>
-        <a href="mailto:alinepaschoalino@gmail.com">alinepaschoalino@gmail.com</a>
-      </li>
-      <li>
-        <a href="https://linkedin.com/in/alinepaschoalino"
-          >linkedin.com/in/alinepaschoalino</a
-        >
-      </li>
-    </ul>
-
-    <h2>PERSONAL STATEMENT</h2>
-
-    <div id="personal-statement">
-    Specialist in Environmental <b>Project Management</b> and Business in the Energy
-    Sector with more than 9 years experience in public and private sectors.
-
-    <br />
-    Large experience in business and agreements for packing sector and solid
-    urban waste diagnostics, selection/monitoring deliveries and budgets,
-    schedules, construction and equipment purchase.
-
-    <br />
-    Competences in auditing, research, content management, communication,
-    sustainability and social responsibilities, health and safety.
+        <li>
+          🏠
+          <address>Av Duque de Loule, 90, 1050-092, Lisbon</address>
+        </li>
+        <li>
+          📞
+          <span itemprop="telephone"
+            ><a href="tel:+351963695">+351&nbsp963&nbsp695</a></span
+          >
+        </li>
+        <li>
+          📧
+          <a href="mailto:alinepaschoalino@gmail.com"
+            >alinepaschoalino@gmail.com</a
+          >
+        </li>
+        <li>
+          📎
+          <a href="https://linkedin.com/in/alinepaschoalino"
+            >linkedin.com/in/alinepaschoalino</a
+          >
+        </li>
+      </ul>
     </div>
 
-    <h2>CURRICULUM VITAE</h2>
+    <h2>Personal Statement</h2>
 
-    <h3>WORK EXPERIENCE</h3>
+    <div id="personal-statement">
+      <p>
+        Specialist in Environmental <b>Project Management</b> and Business in
+        the Energy Sector with more than 9 years experience in public and
+        private sectors.
 
-    <li>
-      Set 2019 - Present day (2 years)
+        <br />
+        Large experience in business and agreements for packing sector and solid
+        urban waste diagnostics, selection/monitoring deliveries and budgets,
+        schedules, construction and equipment purchase.
+      </p>
 
-      Accenture Multinational Company, Lisbon, Portugal
+      <p>
+        Competences in auditing, research, content management, communication,
+        sustainability and social responsibilities, health and safety.
+      </p>
+    </div>
 
-      Digital Project Analyst: Content control and filtering based on
-      predefined policies by the client
-    </li>
-    <li>
-      Jun 2008 - Set 2017 (9 years)
+    <h2>Curriculum Vitae</h2>
 
-      CEMPRE ONG - Third Sector, São Paulo, Brazil
+    <h3>Work Experience</h3>
+    <ul>
+      <li>
+        <mark>Set 2019 - Present day</mark> <i>(2 years)</i>
+        <br />
 
-      Project Manager: Social and environmental management, projects and research in
-      selective collection and recycling of solid waste nationwide (Brazil).
+        <b>Accenture</b> Multinational Company,
+        <dfn>Lisbon, Portugal</dfn> Digital Project Analyst: Content control and
+        filtering based on predefined policies by the client
+      </li>
+      <li>
+        <mark>Jun 2008 - Set 2017</mark> <i>(9 years)</i>
+        <br />
 
-      Workshops, training and consulting for companies such as Unilever, Nestlé,
-      SIG, Coca-Cola, Tetra Pak, Vigor, Ajinomoto, Arcor, Hershey's, Gerdau and
-      many others.
+        <b>CEMPRE ONG</b> - Third Sector, <dfn>São Paulo, Brazil</dfn>
 
-      Research, classes and workshops on sustainability and solid
-      and urban waste to general public
-    </li>
-    <li>
-      Mar 2013, Jul 2015 (1 month each)
+        <ul>
+          <li>
+            <b>Project Manager:</b> Social and environmental management,
+            projects and research in selective collection and recycling of solid
+            waste nationwide <i>(Brazil)</i>.
+          </li>
+          <li>
+            <b>Workshops:</b> training and consulting for companies such as
+            <mark
+              >Unilever, Nestlé, SIG, Coca-Cola, Tetra Pak, Vigor, Ajinomoto,
+              Arcor, Hershey's, Gerdau and many others.</mark
+            >
+          </li>
+          <li>
+            <b>Research:</b> classes and workshops on sustainability and solid
+            and urban waste to general public
+          </li>
+        </ul>
+      </li>
+      <li>
+        <mark>Mar 2013, Jul 2015</mark> <i>(1 month each)</i>
+        <br />
+        <b>GPTW</b> - Business Consulting, <dfn>São Paulo, Brazil</dfn>
+        <i>(Freelancer)</i>
 
-      GPTW, Business Consulting, São Paulo, Brazil
+        Assessment and auditing good practice content - Culture Audict - C.A for
+        the ÉPOCA magazine ranking of the best companies to work for in Brazil
+      </li>
+    </ul>
+    <h3>Education & Training</h3>
 
-      Freelancer: Assessment and auditing good practice content -
-      Culture Audict - C.A for the ÉPOCA magazine ranking of the best companies
-      to work for in Brazil
-    </li>
+    <code>2018-2021</code>
+    <b>Masters of Globalization, Society and Territory</b> - University of
+    Lisbon - IGOT, <dfn>Lisbon, Portugal</dfn><br />
+    <code>2019</code> Digital Project Management Course - EDIT,
+    <dfn>Lisbon, Portugal</dfn>
+    <br />
+    <code>2017</code> Geoprocessing Course for Environmental Planning and
+    Management - SENAC, <dfn>São Paulo, Brazil</dfn> <br />
+    <code>2014</code> Intensive Course in Environmental Communication - SENAC,
+    <dfn>São Paulo, Brazil</dfn> <br />
+    <code>2014</code> Project Management Professionalization (40h) - Projetti
+    Inovatti - PMI (Project Management Institut), <dfn>São Paulo, Brazil</dfn>
+    <br />
+    <code>2012-2014</code> Postgraduate Lato Sensu in Environmental Management
+    and Business in the Energy Sector - IEE - USP, <dfn>São Paulo, Brazil</dfn>
 
-    <h3>EDUCATION AND TRAINING</h3>
-
-    2018-2021 Masters of Globalization, Society and Territory - University of
-    Lisbon - IGOT, Lisbon, Portugal <br />
-    2019 Digital Project Management Course - EDIT, Lisbon, Portugal <br />
-    2017 Geoprocessing Course for Environmental Planning and Management - SENAC,
-    São Paulo, Brazil <br />
-    2014 Intensive Course in Environmental Communication - SENAC, São Paulo,
-    Brazil <br />
-    2014 Project Management Professionalization (40h) - Projetti Inovatti - PMI
-    (Project Management Institut), São Paulo, Brazil <br />
-    2012- 2014 Postgraduate Lato Sensu in Environmental Management and Business
-    in the Energy Sector - IEE - USP, São Paulo, Brazil
-
-    <h3>PERSONAL SKILLS</h3>
+    <h3 id="personal-skills">Personal Skills</h3>
     <ul>
       <li><b>Portuguese</b> Mother tongue</li>
       <li><b>English</b> Advanced</li>
       <li><b>Spanish</b> Intermediate</li>
       <li>
-        <b>Communication</b>
-        Excellent
-        <i> (acquired through professional experience as a speaker and teacher) </i>
+        <b>Excellent Communication</b>
+        <i>
+          (acquired through professional experience as a speaker and teacher)
+        </i>
       </li>
       <li>
         <b>Tools</b>
@@ -130,21 +257,24 @@
       <li>
         <b>Management</b>
         <ul>
-          <li>Implementation of quality control processes</li>
+          <li>Implementation of <code>quality control</code> processes</li>
           <li>Knowledge of <code>SCRUM</code> and <code>Agile</code></li>
-          <li>Strong perspicacity and empathy</li>
-          <li>High cognitive balance vs. emotional</li>
+          <li>Strong perspicacity and <code>empathy</code></li>
+          <li>High cognitive <code>balance</code> vs. emotional</li>
         </ul>
       </li>
     </ul>
 
-    <h3>PERSONAL ACHIEVEMENTS</h3>
-    Awards Environmental Commander of the Hydromineral Tourist Resort of São
-    Lourenço das Águas - Minas Gerais, Brazil, 2015
+    <h3>Personal Achievements</h3>
+    <b
+      >Awards Environmental Commander of the Hydromineral Tourist Resort of São
+      Lourenço das Águas</b
+    >
+    - Minas Gerais, Brazil, 2015
 
     <br />
 
-    Award Jury Planeta Casa Claudia - Invited by Casa Claudia Magazine - Brazil,
-    2010 and 2011
+    <b>Award Jury Planeta Casa Claudia</b> - Invited by Casa Claudia Magazine -
+    Brazil, 2010 and 2011
   </body>
 </html>
